@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- sourse links -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/font-provider.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/templates.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/preloader.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-app">
+        <section>
+            <header>
+                <div class="additional-menu container-fluid">
+                    <nav>
+                        <li class="addon-btn">Про нас</li>
+                        <li class="addon-btn">Доставка і оплата</li>
+                        <li class="addon-btn">Контакти</li>
+                        <li class="addon-btn">Скарги та побажання</li>
+                        <li class="addon-btn">+38 099 123 45 67</li>
+                    </nav>
+                </div>
+                <div class="main-menu container-fluid">
+                    <div class="logo al"><a>LOGO</a></div>
+                    <div class="burger-menu">
+                        <div></div>
+                        <div class="middle"></div>
+                        <div></div>
+                    </div>
+                    <div className="menu-holder">
+                        <nav class="menu-btn-block">
+                            <li class="menu-btn fd"><a>ПЕРШІ СТРАВИ</a></li>
+                            <li class="menu-btn md"><a>ОСНОВНІ СТРАВИ</a></li>
+                            <li class="menu-btn ad"><a>ГАРНІРИ</a></li>
+                            <li class="menu-btn sa"><a>САЛАТИ</a></li>
+                            <li class="menu-btn ba"><a>ВИПІЧКА</a></li>
+                            <li class="menu-btn co"><a>ДЕСЕРТИ</a></li>
+                            <li class="menu-btn dr"><a>НАПОЇ</a></li>
+                        </nav>
+                    </div>
+                    <div class="hidden-menu-btn-block hidden">
+                        <nav class="menu-btn-block">
+                            <li class="close">
+                                <div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </li>
+                            <li class="menu-btn fd"><a>ПЕРШІ СТРАВИ</a></li>
+                            <li class="menu-btn md"><a>ОСНОВНІ СТРАВИ</a></li>
+                            <li class="menu-btn ad"><a>ГАРНІРИ</a></li>
+                            <li class="menu-btn sa"><a>САЛАТИ</a></li>
+                            <li class="menu-btn ba"><a>ВИПІЧКА</a></li>
+                            <li class="menu-btn co"><a>ДЕСЕРТИ</a></li>
+                            <li class="menu-btn dr"><a>НАПОЇ</a></li>
+                        </nav>
+                    </div>
+                    <div class="cart">
+                        <img src="./assets/images/cart.png" alt="Cart">
+                        <div class="indicator">0</div>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <section>
+            <main class="main container-fluid">
+            </main>
+        </section>
+        <section>
+            <footer class="footer container-fluid row-dir-sb">
+                <div class="info-block col-dir">
+                    <div class="logo">LOGO</div>
+                    <div class="available-fin-services">
+                        <div class="fin-service"></div>
+                        <div class="fin-service"></div>
+                    </div>
+                </div>
+                <div class="menu-block col-dir">
+                    <span>Меню</span>
+                    <nav>
+                        <li class="menu-btn fd"><a>Перші страви</a></li>
+                        <li class="menu-btn md"><a>Основні страви</a></li>
+                        <li class="menu-btn ad"><a>Гарніри</a></li>
+                        <li class="menu-btn sa"><a>Салати</a></li>
+                        <li class="menu-btn ba"><a>Випічка</a></li>
+                        <li class="menu-btn co"><a>Десерти</a></li>
+                        <li class="menu-btn dr"><a>Напої</a></li>
+                    </nav>
+                </div>
+                <div class="company-block col-dir">
+                    <span>Компанія</span>
+                    <nav>
+                        <li>Політика конфеденційності</li>
+                        <li>Договір оферти</li>
+                        <li>Про нас</li>
+                        <li>Доставка і оплата</li>
+                        <li>Контакти</li>
+                        <li>Скарги та побажання</li>
+                    </nav>
+                </div>
+                <div class="contacts-block col-dir">
+                    <span>Контакти</span>
+                    <span class="phone">+38 099 123 45 67</span>
+                    <span class="adress">м. Вінниця, вул Київська</span>
+                    <span class="schedule">Працюємо щодня з 11:00 по 21:00</span>
+                </div>
+                <div class="social-block col-dir">
+                    <span>Приєднуйтесь у соцмережах:</span>
+                    <div class="socials">
+                        <div class="fb">FB</div>
+                        <div class="inst">INST</div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <div class="orders orders-unvisible">
+        <div class="close">
+            <div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="order-area">
+            <div class="order-list"></div>
+            <div class="order-details">
+                <div class="name">
+                    <span>Ім'я</span>
+                    <input type="text" placeholder="Вася">
+                </div>
+                <div class="credits">
+                    <div class="city">
+                        <span>Місто</span>
+                        <input type="text" >
+                    </div>
+                    <div class="adress">
+                        <span>Адреса</span>
+                        <input class="street" type="text">
+                    </div>
+                </div>
+                <div class="phone">
+                    <span>Телефон:</span>
+                    <input type="tel" id="phone" name="phone" >
+                </div>
+                <div class="summary">
+                    <span>Всього: <span class="summ"></span> грн</span>
+                </div>
+                <button class="submit">Замовити</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- script block -->
+    <script src="./index.js" type="module"></script>
+    <script src="./js-worker/layout-events.js"></script>
+</body>
+
+</html>

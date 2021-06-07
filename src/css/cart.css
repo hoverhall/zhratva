@@ -1,0 +1,42 @@
+.orders {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orders-unvisible {
+    display: none;
+}
+
+.orders .close .line {
+    top: 20px;
+    left: 5px;
+    background-color: #424242;
+}
+
+.orders .close {
+    position: absolute;
+    /* float: right; */
+    margin-top: -30px;
+    margin-left: 20px;
+    top: 50px;
+    right: 50px;
+}
+
+.orders .order-area {
+    width: 75%;
+    height: 50%;
+    background-color: #e6e6e6;
+
+}
+
+.order-area.warning {
+    border: 1.5px solid #ff1e1e;
+}

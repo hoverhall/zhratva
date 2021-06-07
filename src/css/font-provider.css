@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../assets/fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../assets/fonts/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf);
+}

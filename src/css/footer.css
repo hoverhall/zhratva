@@ -1,0 +1,60 @@
+section .footer {
+    width: 65%;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+footer div {
+    color: #9b9b9b;
+}
+
+footer div span {
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    font-family: "Comfortaa", cursive;
+    font-weight: bold;
+}
+
+footer div nav li {
+    transition: All .15s;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+footer div nav li:hover a {
+    color: #e97e7e;
+}
+
+.phone {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.adress {
+    margin-top: 35px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials * {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        flex-wrap: wrap;
+        /* flex-direction: column !important; */
+    }
+
+    footer > div {
+        width: 300px;
+        margin-left: 80px;
+        margin-bottom: 60px;
+    }
+    footer div span {
+        font-family: Arial, Helvetica, sans-serif !important;
+    }
+}

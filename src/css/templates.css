@@ -1,0 +1,40 @@
+.container {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.container-fluid {
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.col-dir-sb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.col-dir-sa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row-dir-sb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row-dir-sa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.col-dir {
+    display: flex;
+    flex-direction: column;
+}
