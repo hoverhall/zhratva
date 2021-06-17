@@ -4,7 +4,7 @@ document.onscroll = () => {
     
     if (window.innerWidth > 1000) {
         console.log(true)
-        if (window.pageYOffset  > 52) {
+        if (window.pageYOffset > 52) {
             menu.classList.add("sticky")
         } else if (window.pageYOffset <= 52) {
             menu.classList.remove("sticky");

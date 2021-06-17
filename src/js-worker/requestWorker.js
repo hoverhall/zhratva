@@ -6,8 +6,9 @@ function postReplaceDOM (response, dom) {
         button.onclick = function () {
             let id = this.getAttribute("id")
             dom.cookie += id
-            let ordersCount = dom.cookie.replace("order_list=id").split("id").length
-            dom.querySelector(".indicator").innerText = ordersCount
+            let ordersCount =  dom.cookie.replace("order_list=id").split("id").length
+        let temp = dom.cookie.replace("order_list=id").split("id")
+        dom.querySelector(".indicator").innerText = temp == "order_list=" ? 0 : ordersCount
         }
     })
 }
@@ -16,7 +17,7 @@ function replaceDOM(dom, preparedDOM, response) {
     dom.querySelector("main").innerHTML = ""
     dom.querySelector("main").innerHTML = preparedDOM.innerHTML
 
-    postReplaceDOM(response, dom)
+    postReplaceDOM(response, dom) // when dishes was added to DOM 
 }
 
 function prepareDOM(response, dom, query) {
@@ -27,7 +28,7 @@ function prepareDOM(response, dom, query) {
     let dishes = document.createElement("div")
     dishes.classList.add("dishes")
 
-    response.items.map(item => {
+    response.items.map(item => { // create list of dishes
         dishes.innerHTML += 
         `<div class="dish">
             <div class="dish-image"><img src="${item.imgURL}" alt="${item.name}"></div>
@@ -46,20 +47,21 @@ function prepareDOM(response, dom, query) {
     container.appendChild(current_page_name)
     container.appendChild(dishes)
     
-    replaceDOM(dom, container, response)
+    replaceDOM(dom, container, response) // add list of dishes in DOM
 }
 
 
 export default (request, dom, conn, query) => {
     let main = dom.querySelector("main")
-    main.innerHTML = layoutTemplate.preloader_template
+    // main.innerHTML = layoutTemplate.preloader_template
 
     function requestFunction(request) {
-        setTimeout(() => {
-            conn.get_data(request).then(res => {
-                prepareDOM(res, dom, query)
+        // setTimeout(() => {
+            conn.get_data(request) // make request to the server
+            .then(res => {
+                prepareDOM(res, dom, query) // when data was returned call function
             })
-        }, 500)
+        // }, 500)
     }
 
     return requestFunction(request)

@@ -29,7 +29,6 @@ export default class {
             this.__xhr.open(type, this.__server+req, true)
             let _this = this
             this.__xhr.setRequestHeader("Content-type", "application/json");
-            console.log(data)
             this.__xhr.send(data)
             
             this.__xhr.onload = function () {
